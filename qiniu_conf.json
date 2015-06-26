@@ -1,0 +1,6 @@
+{
+    "src":          "public",
+    "dest":         "qiniu:access_key=DzeYacYVFZVgtbMwvs_1ULZa1wwzxltOBTuMWchh&secret_key=LP7nP7WZ76y5IznmpqDaNVbNmkAq13lFMoliutTh&bucket=blog",
+    "deletable":    0,
+    "debug_level":  1
+}

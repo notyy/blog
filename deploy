@@ -1,0 +1,2 @@
+hexo generate
+qrsync --check-exist qiniu_conf.json
