@@ -11,8 +11,10 @@ categories:
 最近我们在一个项目上使用[spray](http://spray.io/)来发布restful service。
 ![spray logo](http://7u2h31.com1.z0.glb.clouddn.com/spray_logo_c.png)
 spray是个性能很好而且功能非常完整的service框架，包含很多组件，从底层http服务器到高层的rest路由DSL都有。一般简单的应用就使用和掌握好最高层的spray-routing就够用。本文主要讲spray-routing，不及其余。 spray整体的设计理念，spray和akka的关系留待以后的博客。
+<!-- more -->
 spray-routing上手很容易，但是有一些比较独特的概念和设计。如果没有一定的理解，就会发现当系统复杂到一定程度时对于有些需求不知道该怎么实现了。
 所以写这篇博客先解释一下[spray的核心流程](http://spray.io/documentation/1.2.2/spray-routing/key-concepts/)，之后会再写文章讲最核心的Directive（指令），方便大家掌握使用。
+
 spray发布http service的流程如下：
 ![Image Title](http://7u2h31.com1.z0.glb.clouddn.com/spray流程概念1.png)
 整个流程由spray框架控制，http连接处理由spray-can或spray-servlet负责，大部分情况下，开发人员只要定义路由——url和业务服务的映射——以及对应的业务服务即可，注意这个路由定义并不是一个配置文件，而是spray-routing定义的一套scala的DSL。

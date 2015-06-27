@@ -8,6 +8,7 @@ categories:
 本文讨论while和Range.foreach性能的比较，想快速知道结论的可以跳到最后的图表，关心过程的就慢慢看我写来。
 
 最近同事在工作上要处理一个大数据集，比如一亿条，用scala写的实现性能很差，后来改用java写，性能提高百倍以上。 但最初的代码是用`(1 to 100000000).foreach`来做的，我们都知道用这个跟java的while比不是很公平，应该也用scala的while。 经过测试scala的while和java的while的性能是接近的。
+<!-- more -->
 
 我写了简单的程序对比scala while和Range.foreach的性能
 ```scala

@@ -13,6 +13,8 @@ categories:
 * 知道自己不知道
 * 知道自己知道
 
+<!-- more -->
+
 ![unkown unknown](http://7u2h31.com1.z0.glb.clouddn.com/15-45-17.jpg)
 
 我在给客户做讲座的时候经常给他们讲一些他们*不知道自己不知道*的东西开拓视野，这样才能启动后续的学习。
